@@ -1,4 +1,4 @@
-python-telegram-bot
+flask
 requests
 beautifulsoup4
-flask
+line-bot-sdk
