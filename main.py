@@ -19,8 +19,8 @@ from linebot.v3.webhooks import MessageEvent, TextMessageContent
 app = Flask(__name__)
 
 # 從環境變數讀取 LINE 金鑰
-CHANNEL_ACCESS_TOKEN = os.environ.get('F9y7/jQO8gil7X1NKY7mgg6FaF6y/GstO3YqDSBIa3smgawdgFvdsDj4Tjiai+8VMw7wrs6PgIC5PXhd8Zxwcil5jHwzEPqV0s+C/hPWFJ2tFa3gq2FX2IOeY3tyI0KRqhEFMTZ32VryDoc32sEsowdB04t89/1O/w1cDnyilFU=')
-CHANNEL_SECRET = os.environ.get('6b9eaa28ca0913a089b5337afd86551d')
+CHANNEL_ACCESS_TOKEN = os.environ.get('LINE_CHANNEL_ACCESS_TOKEN')
+CHANNEL_SECRET = os.environ.get('LINE_CHANNEL_SECRET')
 
 # 設定 LINE API
 configuration = Configuration(access_token=CHANNEL_ACCESS_TOKEN)
