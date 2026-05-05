@@ -17,6 +17,11 @@ from linebot.v3.webhooks import MessageEvent, TextMessageContent
 
 app = Flask(__name__)
 
+# 新增這段讓 cron-job 能夠順利讀取首頁
+@app.route("/")
+def home():
+    return "Bot is awake and running!"
+
 CHANNEL_ACCESS_TOKEN = os.environ.get('LINE_CHANNEL_ACCESS_TOKEN')
 CHANNEL_SECRET = os.environ.get('LINE_CHANNEL_SECRET')
 
